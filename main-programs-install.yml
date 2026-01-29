@@ -7,5 +7,5 @@
         name:
             - vim
             - net-tools
-            - winrar
+            - wireshark
         state: present
