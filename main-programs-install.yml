@@ -1,0 +1,11 @@
+- name: Instalar paquetes basicos en servidores Linux
+  hosts: apps
+  become: true
+  tasks:
+    - name: Instalar vim net-tools y unrar
+      package:
+        name:
+            - vim
+            - net-tools
+            - unrar
+        state: present
