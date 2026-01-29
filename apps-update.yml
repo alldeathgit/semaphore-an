@@ -1,0 +1,9 @@
+- name: Update and Upgrade Servers
+  hosts: apps
+  tasks:
+    - name: Update package list
+      apt:
+        update_cache: yes
+    - name: Update all packages
+      apt:
+        upgrade: dist
