@@ -2,7 +2,7 @@
   hosts: apps
   become: true
   tasks:
-    - name: Instalar vim net-tools y unrar
+    - name: Instalar vim net-tools y wireshark
       package:
         name:
             - vim
